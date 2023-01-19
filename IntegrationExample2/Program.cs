@@ -16,7 +16,7 @@ IEntity provider = factory.GetProvider("Sage", "Client");
 
 provider.Create(client,
             (result) => {
-                // do something with the returned invoice
+                //Convert the raw object to a Client object
                 Client info = (Client)result;
                 Console.WriteLine("Client created with ID: " + info.Id);
             },
