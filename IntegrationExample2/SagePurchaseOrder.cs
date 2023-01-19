@@ -17,7 +17,7 @@ namespace IntegrationExample2
             _tokenSaveFunc = tokenSaveFunc;
         }
 
-        public void Create(object po, Action<object> successCallback, Action<Exception> errorCallback)
+        public void Create(object po, Action<object>? successCallback, Action<Exception>? errorCallback)
         {
             try
             {
