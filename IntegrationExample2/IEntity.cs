@@ -8,7 +8,7 @@ namespace IntegrationExample2
 {
     internal interface IEntity
     {
-        public void Create(object x, Action<object> successCallback, Action<Exception> errorCallback);
+        public void Create(object x, Action<object>? successCallback = null, Action<Exception>? errorCallback = null);
         public void Read();
         public void Update();
         public void Delete();

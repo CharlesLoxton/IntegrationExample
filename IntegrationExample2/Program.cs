@@ -22,7 +22,7 @@ provider.Create(client,
             },
             (ex) => {
                 // do something with the exception
-                Console.WriteLine("Error occured while creating invoice: " + ex.Message);
+                Console.WriteLine("Error occured while creating client: " + ex.Message);
             }
 );
 
